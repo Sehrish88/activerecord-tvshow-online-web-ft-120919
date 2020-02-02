@@ -1,6 +1,5 @@
-class Show < ActiveRecord::Base 
-  def change 
-    def Show::highest_rating
+class Show < ActiveRecord::Base
+  def Show::highest_rating
     Show.maximum("rating")
   end
 
@@ -27,4 +26,4 @@ class Show < ActiveRecord::Base
   def Show::shows_by_alphabetical_order
     Show.order(name: :asc)
   end
-end 
+end
